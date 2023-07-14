@@ -1,6 +1,7 @@
 # Astro Starter Kit: Blog
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e6b1ea85-c735-47e1-b801-be31ba8df01b/deploy-status)](https://app.netlify.com/sites/resilient-starburst-984aea/deploys)
+
 ```
 npm create astro@latest -- --template blog
 ```
@@ -15,12 +16,12 @@ npm create astro@latest -- --template blog
 
 Features:
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+-   ✅ Minimal styling (make it your own!)
+-   ✅ 100/100 Lighthouse performance
+-   ✅ SEO-friendly with canonical URLs and OpenGraph data
+-   ✅ Sitemap support
+-   ✅ RSS Feed support
+-   ✅ Markdown & MDX support
 
 ## 🚀 Project Structure
 
@@ -67,4 +68,3 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 ## Credit
 
 This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
-

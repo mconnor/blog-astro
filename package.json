@@ -11,10 +11,10 @@
         "lint": "prettier -w --plugin-search-dir=. .  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\""
     },
     "dependencies": {
-        "@astrojs/mdx": "^0.19.7",
-        "@astrojs/rss": "^2.4.4",
-        "@astrojs/sitemap": "^1.4.0",
-        "astro": "^2.10.15",
+        "@astrojs/mdx": "^1.0.2",
+        "@astrojs/rss": "^3.0.0",
+        "@astrojs/sitemap": "^3.0.0",
+        "astro": "^3.0.10",
         "open-props": "^1.5.15"
     },
     "devDependencies": {
@@ -26,5 +26,5 @@
         "prettier": "^3.0.3",
         "prettier-plugin-astro": "^0.11.1"
     },
-    "packageManager": "pnpm@8.6.12"
+    "packageManager": "^pnpm@8.7.4"
 }

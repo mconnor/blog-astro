@@ -1,6 +1,11 @@
-@import "open-props/open-props.min.css";
-@import "open-props/normalize.min.css";
-@import "open-props/buttons.min.css";
+@import 'open-props/open-props.min.css';
+@import 'open-props/normalize.min.css';
+@import 'open-props/buttons.min.css';
+
+body {
+  margin: 0px auto;
+  width: 50%;
+}
 
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.

@@ -1,6 +1,8 @@
 {
   "cssvar.files": [
-    "./node_modules/open-props/open-props.min.css"
+    "./node_modules/open-props/open-props.min.css",
+
+    "src/styles/*.astro"
     // if you have an alternative path to where your styles are located
     // you can add it in this array of files
     // "assets/styles/variables.css"
@@ -10,20 +12,13 @@
   "cssvar.ignore": [],
 
   // add support for autocomplete in JS or JS like files
-  "cssvar.extensions": ["css", "postcss", "jsx", "tsx"],
+  "cssvar.extensions": ["css", "postcss", "jsx", "tsx", "astro"],
+  "editor.formatOnSave": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    "astro",
-    "typescript",
-    "typescriptreact"
-  ],
-  "prettier.documentSelectors": ["**/*.astro"],
-  "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "cSpell.words": ["astrojs"],
-  "files.associations": {
-    "*.mdx": "markdown"
-  }
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
+  ]
 }

@@ -5,23 +5,23 @@ import Footer from '../components/Footer.astro'
 // import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 import '../styles/global.css'
 interface Props {
-    title: string
-    description: string
+  title: string
+  description: string
 }
 
 const { title, description } = Astro.props
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <BaseHead title={title} description={description} />
-    </head>
-    <body>
-        <Header title={title} />
-        <main>
-            <slot />
-            <Footer />
-        </main>
-    </body>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <Header title={title} />
+    <main>
+      <slot />
+      <Footer />
+    </main>
+  </body>
 </html>

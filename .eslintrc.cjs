@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2022: true,
   },
   extends: [
     'eslint:recommended',
@@ -22,6 +22,8 @@ module.exports = {
         extraFileExtensions: ['.astro'],
       },
       rules: {
+        'react/react-in-jsx-scope': 'off',
+        'react/jsx-uses-react': 'off',
         // override/add rules settings here, such as:
         // "astro/no-set-html-directive": "error"
       },

@@ -2,6 +2,8 @@
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import { ViewTransitions } from 'astro:transitions'
+import { fade } from 'astro:transitions'
 // import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 import '../styles/global.css'
 interface Props {
@@ -16,11 +18,11 @@ const { title = 'needs title', description = 'needs description' } = Astro.props
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} />
-  </head>
-  <body>
+    <ViewTransitions />
+  </head><body>
     <Header title={title} />
     <main>
-      <slot />
+      <slot transition:animate={fade({ duration: '2s' })} />
       <Footer />
     </main>
   </body>

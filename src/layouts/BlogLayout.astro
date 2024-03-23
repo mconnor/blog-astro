@@ -1,0 +1,26 @@
+---
+import Layout from './Layout.astro'
+
+function capitalizeFirstLowerRest(str: string) {
+  const arr = str.split(' ')
+  return arr
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ')
+}
+
+type Props = {
+  title: string
+     description: string;
+    pubDate: Date;
+    updatedDate?: Date | undefined;
+    heroImage?: string | undefined;
+  
+}
+
+
+const { title } = Astro.props
+
+const formattedTitle = capitalizeFirstLowerRest(title)
+---
+
+<Layout title={formattedTitle}><slot /></Layout>

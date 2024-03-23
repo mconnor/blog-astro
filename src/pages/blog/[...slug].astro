@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content'
-import BlogPost from '../../layouts/BlogPost.astro'
+import BlogPost from '../../layouts/BlogLayout.astro'
+import { Image } from 'astro:assets'
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog')
@@ -11,11 +12,20 @@ export async function getStaticPaths() {
 }
 type Props = CollectionEntry<'blog'>
 
-const post: Props = Astro.props
+const post = Astro.props
+
+const { data } = post
+const { title, ...rest } = data
+
 const { Content } = await post.render()
 ---
 
-<BlogPost {...post.data}>
-  <h1>{post.data.title}</h1>
+<BlogPost title={title} {...rest}>
+  <h1>{title}</h1>
+  {
+    data.heroImage && (
+      <Image src={data?.heroImage} alt="hero image" width="1012" height="506" />
+    )
+  }
   <Content />
 </BlogPost>

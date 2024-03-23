@@ -14,19 +14,19 @@
     "format": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.9",
-    "@astrojs/mdx": "^2.2.0",
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/mdx": "^2.2.1",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.1",
-    "@sentry/astro": "^7.107.0",
-    "astro": "^4.5.7",
+    "@sentry/astro": "^7.108.0",
+    "astro": "^4.5.9",
     "open-props": "^1.6.21",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
-    "autoprefixer": "^10.4.18",
+    "autoprefixer": "^10.4.19",
     "dayjs": "^1.11.10",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",

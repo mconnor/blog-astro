@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/BlogPost.astro'
+import Layout from '../layouts/Layout.astro'
 
 import dayjs from 'dayjs' // load on demand
 
@@ -7,13 +7,7 @@ const formattedDate = dayjs().format('MMMM DD YYYY')
 console.log(formattedDate) // Output: "August 08 2021"
 ---
 
-<Layout
-  title="About Me"
-  description="xxx"
-  pubDate={new Date('August 08 2021')}
-  updatedDate={new Date('August 08 2022')}
-  heroImage="/placeholder-about.jpg"
->
+<Layout title="About Me" description="xxx">
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
